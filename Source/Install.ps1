@@ -32,6 +32,7 @@ winget install --id "Google.Chrome" --interactive --scope machine
 winget install --id "Mozilla.Firefox" --interactive --scope machine
 
 # Communication
+winget install --id "XPDC2RH70K22MN" # Discord
 winget install --id "Microsoft.Teams" --interactive --scope machine
 winget install --id "OpenWhisperSystems.Signal" --interactive --scope machine
 winget install --id "9WZDNCRDK3WP" # Slack
