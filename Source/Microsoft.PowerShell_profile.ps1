@@ -1,4 +1,4 @@
-Import-Module posh-git
+# Import-Module posh-git # Do we still need this?
 Import-Module oh-my-posh
 Import-Module Terminal-Icons
 Import-Module DockerCompletion
