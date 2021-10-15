@@ -61,7 +61,6 @@ winget install --id "9P804CRF0395" # Alpine
 Copy-Item -Path "./settings.json" -Destination "C:\Users\${env:UserName}\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState"
 
 # PowerShell Modules
-# Install-Module -Name posh-git -Scope CurrentUser # Do we still need this?
 Install-Module -Name PowerShellGet -Force
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
 Install-Module -Name Terminal-Icons -Repository PSGallery
