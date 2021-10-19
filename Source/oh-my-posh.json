@@ -32,47 +32,94 @@
             "style": "full"
           }
         },
+        {
+          "type": "dotnet",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#67217a",
+          "properties": {
+            "display_version": true,
+            "prefix": " \ue70c "
+          }
+        },
+        {
+          "type": "go",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#7FD5EA",
+          "properties": {
+            "display_version": true,
+            "prefix": " \uFCD1 "
+          }
+        },
+        {
+          "type": "java",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#4063D8",
+          "properties": {
+            "display_version": true,
+            "prefix": " \uE738 "
+          }
+        },
+        {
+          "type": "node",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#6CA35E",
+          "properties": {
+            "display_version": true,
+            "prefix": " \uE718 "
+          }
+        },
+        {
+          "type": "python",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#100e23",
+          "background": "#906cff",
+          "properties": {
+            "display_version": true,
+            "prefix": " \uE235 "
+          }
+        },
+        {
+          "type": "ruby",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#4063D8",
+          "properties": {
+            "display_version": true,
+            "prefix": " \uE791 "
+          }
+        },
+        {
+          "type": "rust",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#193549",
+          "background": "#99908a",
+          "properties": {
+            "display_version": true,
+            "prefix": " \uE7a8 "
+          }
+        },
         // {
-        //    "type": "dotnet",
-        //    "style": "powerline",
-        //    "powerline_symbol": "",
-        //    "foreground": "#000000",
-        //    "background": "#00ffff",
-        //    "properties": {
-        //        "prefix": " \uE77F "
-        //    }
+        //   "type": "kubectl",
+        //   "style": "powerline",
+        //   "powerline_symbol": "\uE0B0",
+        //   "foreground": "#ffffff",
+        //   "background": "#316ce6",
+        //   "properties": {
+        //     "prefix": " \uFD31 ",
+        //     "template": "{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}"
+        //   }
         // },
-        // {
-        //    "type": "node",
-        //    "style": "powerline",
-        //    "powerline_symbol": "\uE0B0",
-        //    "foreground": "#ffffff",
-        //    "background": "#6CA35E",
-        //    "properties": {
-        //        "prefix": " \uE718 "
-        //    }
-        // }, 
-        // {
-        //  "type": "python",
-        //  "style": "powerline",
-        //  "powerline_symbol": "\uE0B0",
-        //  "foreground": "#100e23",
-        //  "background": "#906cff",
-        //  "properties": {
-        //    "prefix": " \uE235 "
-        //  }
-        // },
-        // {
-        //    "type": "kubectl",
-        //    "style": "powerline",
-        //    "powerline_symbol": "\uE0B0",
-        //    "foreground": "#000000",
-        //    "background": "#ebcc34",
-        //    "properties": {
-        //        "prefix": " \uFD31 ",
-        //        "template": "{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}"
-        //    }
-        // }, 
         {
           "type": "git",
           "style": "powerline",
@@ -82,7 +129,8 @@
           "properties": {
             "display_status": true,
             "display_stash_count": true,
-            "display_upstream_icon": true
+            "display_upstream_icon": true,
+            "status_colors_enabled": true
           }
         },
         {
@@ -129,5 +177,7 @@
       ]
     }
   ],
+  "console_title": true,
+  "console_title_style": "folder",
   "final_space": false
 }
