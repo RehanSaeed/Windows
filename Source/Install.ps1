@@ -51,7 +51,7 @@ winget install --id "dev47apps.DroidCam" --interactive --scope machine
 winget install --id "XSplit.VCam" --interactive --scope machine
 
 # Terminal
-winget install --id "Microsoft.WindowsTerminal" --interactive --scope machine
+winget install --id "9N0DX20HK701" # Windows Terminal
 winget install --id "9MZ1SNWT0N5D" # PowerShell
 winget install --id "JanDeDobbeleer.OhMyPosh" --interactive --scope machine
 winget install --id "9P9TQF7MRM4R" # Windows Subsystem for Linux Preview
