@@ -95,6 +95,6 @@ winget install --id "Microsoft.VisualStudio.2022.Enterprise" --interactive --sco
 winget install --id "Microsoft.VisualStudioCode" --interactive --scope machine
 
 # Frameworks
-winget install --id "OpenJS.NodeJS" --interactive --scope machine
+winget install --id "OpenJS.NodeJS.LTS" --interactive --scope machine
 winget install --id "9PJPW5LDXLZ5" # Python
 winget install --id "Microsoft.dotnet" --interactive --scope machine
