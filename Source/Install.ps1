@@ -21,7 +21,7 @@ winget install --id "9NJ3KMH29VGJ" # Enpass
 winget install --id "WinSCP.WinSCP" --interactive --scope machine
 winget install --id "9WZDNCRFJ3PV" # Windows Scan
 winget install --id "Microsoft.PowerToys" --interactive --scope machine
-start "https://docs.microsoft.com/en-us/sysinternals/downloads/zoomit"
+winget install --id "9P7KNL5RWT25" # Sysinternals Suite
 
 # Pheripherals
 winget install --id "Elgato.ControlCenter" --interactive --scope machine
