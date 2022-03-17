@@ -96,6 +96,5 @@ winget install --id "Microsoft.VisualStudioCode" --interactive --scope machine
 
 # Frameworks
 start "https://github.com/coreybutler/nvm-windows/releases"
-winget install --id "OpenJS.NodeJS.LTS" --interactive --scope machine
 winget install --id "9PJPW5LDXLZ5" # Python
 winget install --id "Microsoft.dotnet" --interactive --scope machine
