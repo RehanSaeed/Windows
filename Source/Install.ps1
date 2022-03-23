@@ -88,6 +88,7 @@ winget install --id "Microsoft.AzureStorageExplorer" --interactive --scope machi
 # Tools
 winget install --id "Docker.DockerDesktop" --interactive --scope machine
 winget install --id "Microsoft.PowerBI" --interactive --scope machine
+winget install --id "Pulumi.Pulumi" --interactive --scope machine
 winget install --id "Telerik.Fiddler" --interactive --scope machine
 
 # IDE's
