@@ -20,7 +20,6 @@ winget install --id "XP89DCGQ3K6VLD" # Microsoft Power Toys
 winget install --id "9NJ3KMH29VGJ" # Enpass
 winget install --id "WinSCP.WinSCP" --interactive --scope machine
 winget install --id "9WZDNCRFJ3PV" # Windows Scan
-winget install --id "Microsoft.PowerToys" --interactive --scope machine
 winget install --id "9P7KNL5RWT25" # Sysinternals Suite
 
 # Pheripherals
