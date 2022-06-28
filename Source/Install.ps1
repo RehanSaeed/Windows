@@ -62,7 +62,7 @@ Copy-Item -Path "./settings.json" -Destination "C:\Users\${env:UserName}\AppData
 
 # PowerShell Modules
 Install-Module -Name PowerShellGet -Force
-Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+Install-Module -Name PSReadLine -Scope CurrentUser -Force -SkipPublisherCheck
 Install-Module -Name Terminal-Icons -Repository PSGallery
 Install-Module -Name DockerCompletion -Scope CurrentUser
 

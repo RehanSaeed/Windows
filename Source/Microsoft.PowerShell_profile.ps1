@@ -1,7 +1,6 @@
 Import-Module oh-my-posh
 Import-Module Terminal-Icons
 Import-Module DockerCompletion
-Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 # Set-PoshPrompt -Theme Paradox
 Set-PoshPrompt -Theme "C:\Users\${env:UserName}\OneDrive - Microsoft\Documents\PowerShell\oh-my-posh.json"
