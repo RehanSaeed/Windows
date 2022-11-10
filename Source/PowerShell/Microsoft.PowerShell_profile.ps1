@@ -3,7 +3,8 @@ Import-Module Terminal-Icons
 Import-Module DockerCompletion
 Set-PSReadLineOption -PredictionViewStyle ListView
 # Set-PoshPrompt -Theme Paradox
-Set-PoshPrompt -Theme "C:\Users\${env:UserName}\OneDrive - Microsoft\Documents\PowerShell\oh-my-posh.json"
+$ProfileDirectory = Split-Path $PROFILE;
+Set-PoshPrompt -Theme "$ProfileDirectory\oh-my-posh.json"
 
 # PowerShell parameter completion shim for the dotnet CLI
 Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {

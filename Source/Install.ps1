@@ -16,7 +16,13 @@ start "https://github.com/zufuliu/notepad2/releases"
 
 # Utilities
 winget install --id "7zip.7zip" --interactive --scope machine
+
 winget install --id "XP89DCGQ3K6VLD" # Microsoft Power Toys
+$PowerToysBackupPath = "C:\Users\${env:UserName}\Documents\PowerToys\Backup";
+Copy-Item -Path "./PowerToys/settings.ptb" -Destination $PowerToysBackupPath
+Write-Output "Restore Power Toys backup froṁ: $PowerToysBackupPath"
+Write-Output "";
+
 winget install --id "9NJ3KMH29VGJ" # Enpass
 winget install --id "WinSCP.WinSCP" --interactive --scope machine
 winget install --id "9WZDNCRFJ3PV" # Windows Scan
@@ -58,7 +64,7 @@ winget install --id "9NBLGGH4MSV6" # Ubuntu
 winget install --id "9P804CRF0395" # Alpine
 
 # Windows Terminal
-Copy-Item -Path "./settings.json" -Destination "C:\Users\${env:UserName}\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState"
+Copy-Item -Path "./Terminal/settings.json" -Destination "C:\Users\${env:UserName}\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState"
 
 # PowerShell Modules
 Install-Module -Name PowerShellGet -Force
@@ -68,8 +74,8 @@ Install-Module -Name DockerCompletion -Scope CurrentUser
 
 # PowerShell Profile
 $ProfileDirectory = Split-Path $PROFILE;
-Copy-Item -Path "./Microsoft.PowerShell_profile.ps1" -Destination $ProfileDirectory
-Copy-Item -Path "./oh-my-posh.json" -Destination $ProfileDirectory
+Copy-Item -Path "./PowerShell/Microsoft.PowerShell_profile.ps1" -Destination $ProfileDirectory
+Copy-Item -Path "./PowerShell/oh-my-posh.json" -Destination $ProfileDirectory
 
 # Git
 winget install --id "Git.Git" --interactive --scope machine
