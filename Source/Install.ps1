@@ -79,6 +79,8 @@ Copy-Item -Path "./PowerShell/oh-my-posh.json" -Destination $ProfileDirectory
 
 # Git
 winget install --id "Git.Git" --interactive --scope machine
+Copy-Item -Path "./Git/.gitconfig" -Destination "C:\Users\${env:UserName}"
+
 winget install --id "GitHub.GitLFS" --interactive --scope machine
 winget install --id "GitHub.cli" --interactive --scope machine
 winget install --id "Axosoft.GitKraken" --interactive --scope machine
