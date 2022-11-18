@@ -21,15 +21,13 @@ winget install --id "Microsoft.VisualStudio.2022.Enterprise" --interactive --sco
 
 # Git
 winget install --id "Git.Git" --interactive --scope machine
+winget install --id "GitHub.GitLFS" --interactive --scope machine
 mkdir C:\GitHub
 cd C:\GitHub
 git clone https://github.com/RehanSaeed/Windows.git
 cd Windows\Source
 Copy-Item -Path "./Git/.gitconfig" -Destination "C:\Users\${env:UserName}"
-
-winget install --id "GitHub.GitLFS" --interactive --scope machine
 winget install --id "GitHub.cli" --interactive --scope machine
-winget install --id "Axosoft.GitKraken" --interactive --scope machine
 
 # Office
 winget install --id "9MSPC6MP8FM4" # Microsoft Whiteboard
