@@ -10,6 +10,27 @@ Enable-WindowsOptionalFeature -Online -FeatureName "VirtualMachinePlatform" -All
 # Fonts
 start "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip"
 
+# Terminal
+winget install --id "9N0DX20HK701" # Windows Terminal
+winget install --id "9MZ1SNWT0N5D" # PowerShell
+winget install --id "JanDeDobbeleer.OhMyPosh" --interactive --scope machine
+
+# IDE
+winget install --id "Microsoft.VisualStudioCode" --interactive --scope machine
+winget install --id "Microsoft.VisualStudio.2022.Enterprise" --interactive --scope machine
+
+# Git
+winget install --id "Git.Git" --interactive --scope machine
+mkdir C:\GitHub
+cd C:\GitHub
+git clone https://github.com/RehanSaeed/Windows.git
+cd Windows\Source
+Copy-Item -Path "./Git/.gitconfig" -Destination "C:\Users\${env:UserName}"
+
+winget install --id "GitHub.GitLFS" --interactive --scope machine
+winget install --id "GitHub.cli" --interactive --scope machine
+winget install --id "Axosoft.GitKraken" --interactive --scope machine
+
 # Office
 winget install --id "9MSPC6MP8FM4" # Microsoft Whiteboard
 winget install --id "Notepad2mod.Notepad2mod" --interactive --scope machine
@@ -55,10 +76,8 @@ winget install --id "OBSProject.OBSStudio" --interactive --scope machine
 winget install --id "dev47apps.DroidCam" --interactive --scope machine
 winget install --id "XSplit.VCam" --interactive --scope machine
 
-# Terminal
-winget install --id "9N0DX20HK701" # Windows Terminal
-winget install --id "9MZ1SNWT0N5D" # PowerShell
-winget install --id "JanDeDobbeleer.OhMyPosh" --interactive --scope machine
+# Linux
+
 winget install --id "9P9TQF7MRM4R" # Windows Subsystem for Linux Preview
 winget install --id "9NBLGGH4MSV6" # Ubuntu
 winget install --id "9P804CRF0395" # Alpine
@@ -77,14 +96,6 @@ $ProfileDirectory = Split-Path $PROFILE;
 Copy-Item -Path "./PowerShell/Microsoft.PowerShell_profile.ps1" -Destination $ProfileDirectory
 Copy-Item -Path "./PowerShell/oh-my-posh.json" -Destination $ProfileDirectory
 
-# Git
-winget install --id "Git.Git" --interactive --scope machine
-Copy-Item -Path "./Git/.gitconfig" -Destination "C:\Users\${env:UserName}"
-
-winget install --id "GitHub.GitLFS" --interactive --scope machine
-winget install --id "GitHub.cli" --interactive --scope machine
-winget install --id "Axosoft.GitKraken" --interactive --scope machine
-
 # Azure
 winget install --id "Microsoft.AzureCLI" --interactive --scope machine
 winget install --id "Microsoft.AzureCosmosEmulator" --interactive --scope machine
@@ -97,10 +108,6 @@ winget install --id "Docker.DockerDesktop" --interactive --scope machine
 winget install --id "Microsoft.PowerBI" --interactive --scope machine
 winget install --id "Pulumi.Pulumi" --interactive --scope machine
 winget install --id "Telerik.Fiddler" --interactive --scope machine
-
-# IDE's
-winget install --id "Microsoft.VisualStudio.2022.Enterprise" --interactive --scope machine
-winget install --id "Microsoft.VisualStudioCode" --interactive --scope machine
 
 # Frameworks
 start "https://github.com/coreybutler/nvm-windows/releases"
