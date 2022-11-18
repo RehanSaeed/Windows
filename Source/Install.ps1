@@ -60,7 +60,6 @@ winget install --id "XPDC2RH70K22MN" # Discord
 winget install --id "Microsoft.Teams" --interactive --scope machine
 winget install --id "OpenWhisperSystems.Signal" --interactive --scope machine
 winget install --id "9WZDNCRDK3WP" # Slack
-winget install --id "9WZDNCRFJ140" # Twitter
 winget install --id "XP99J3KP4XZ4VV" # Zoom
 
 # Images
