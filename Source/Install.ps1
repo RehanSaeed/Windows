@@ -12,7 +12,7 @@ start "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Cascadia
 
 # Office
 winget install --id "9MSPC6MP8FM4" # Microsoft Whiteboard
-start "https://github.com/zufuliu/notepad2/releases"
+winget install --id "Notepad2mod.Notepad2mod" --interactive --scope machine
 
 # Utilities
 winget install --id "7zip.7zip" --interactive --scope machine
