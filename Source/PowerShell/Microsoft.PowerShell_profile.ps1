@@ -1,10 +1,9 @@
-Import-Module oh-my-posh
+$ProfileDirectory = Split-Path $PROFILE;
+oh-my-posh init pwsh --config "$ProfileDirectory\oh-my-posh.json" | Invoke-Expression;
+
 Import-Module Terminal-Icons
 Import-Module DockerCompletion
 Set-PSReadLineOption -PredictionViewStyle ListView
-# Set-PoshPrompt -Theme Paradox
-$ProfileDirectory = Split-Path $PROFILE;
-Set-PoshPrompt -Theme "$ProfileDirectory\oh-my-posh.json"
 
 # PowerShell parameter completion shim for the dotnet CLI
 Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
