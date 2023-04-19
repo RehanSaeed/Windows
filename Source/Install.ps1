@@ -17,6 +17,10 @@ winget install --id "XP8K0HKJFRXGCK" # Oh My Posh
 
 # IDE
 winget install --id "Microsoft.VisualStudioCode" --interactive --scope machine
+code --install-extension GitHub.copilot             # GitHub Copilot
+code --install-extension ms-dotnettools.csharp      # C#
+code --install-extension cake-build.cake-vscode     # Cake
+code --install-extension ms-vsliveshare.vsliveshare # Live Share
 winget install --id "Microsoft.VisualStudio.2022.Enterprise" --interactive --scope machine
 
 # Git
