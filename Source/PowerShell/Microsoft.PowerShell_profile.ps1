@@ -13,6 +13,7 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
     }
 }
 
+## GitHub Copilot for CLI Aliases
 function ?? { 
     $TmpFile = New-TemporaryFile
     github-copilot-cli what-the-shell ('use powershell to ' + $args) --shellout $TmpFile
@@ -24,7 +25,6 @@ function ?? {
         }
     }
 }
- 
 function git? {
     $TmpFile = New-TemporaryFile
     github-copilot-cli git-assist $args --shellout $TmpFile
@@ -36,7 +36,6 @@ function git? {
         }
     }
 }
-
 function gh? {
     $TmpFile = New-TemporaryFile
     github-copilot-cli gh-assist $args --shellout $TmpFile
