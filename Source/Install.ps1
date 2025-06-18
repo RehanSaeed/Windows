@@ -117,6 +117,7 @@ winget install --id "Microsoft.AzureCLI" --interactive                        # 
 winget install --id "Microsoft.AzureDataStudio" --interactive --scope machine # Azure Data Studio
 
 # Tools
+winget install --id "9PGCV4V3BK4W"                                       # DevToys
 winget install --id "Docker.DockerDesktop" --interactive --scope machine # Docker Desktop
 winget install --id "Microsoft.PowerBI" --interactive --scope machine    # Power BI
 winget install --id "Pulumi.Pulumi" --interactive                        # Pulumi
