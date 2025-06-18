@@ -72,7 +72,8 @@ Copy-Item -Path "./PowerShell/oh-my-posh.json" -Destination $ProfileDirectory
 & $PROFILE; # Reload PowerShell Profile
 
 # Office
-winget install --id "9MSPC6MP8FM4" # Microsoft Whiteboard
+winget install --id "XPDP273C0XHQH2" # Adobe Acrobat Reader
+winget install --id "9MSPC6MP8FM4"   # Microsoft Whiteboard
 
 # Utilities
 winget install --id "7zip.7zip" --interactive --scope machine     # 7Zip
