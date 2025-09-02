@@ -1,6 +1,11 @@
 # Environment Variables
 [System.Environment]::SetEnvironmentVariable("DOTNET_CLI_TELEMETRY_OPTOUT", "1", [EnvironmentVariableTarget]::Machine)
 
+# Registry Keys
+# Disable Mandatory Sensitivity Labelling when printing to PDF in Outlook
+# See https://support.microsoft.com/en-us/office/print-to-pdf-is-blocked-if-mandatory-labeling-is-enabled-328c575c-9db9-4879-953b-a5e176f61e78
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Office\16.0\Outlook\Preferences" -Name "disablepdfprotectioninoutlook" -Value 1 -Type DWord
+
 # Windows Features
 # List features: Get-WindowsOptionalFeature -Online
 Enable-WindowsOptionalFeature -Online -FeatureName "Containers" -All
