@@ -1,5 +1,6 @@
 # Environment Variables
 [System.Environment]::SetEnvironmentVariable("DOTNET_CLI_TELEMETRY_OPTOUT", "1", [EnvironmentVariableTarget]::Machine)
+[System.Environment]::SetEnvironmentVariable("POWERSHELL_TELEMETRY_OPTOUT", "1", [EnvironmentVariableTarget]::Machine)
 
 # Registry Keys
 # Disable Mandatory Sensitivity Labelling when printing to PDF in Outlook
