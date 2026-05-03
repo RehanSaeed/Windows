@@ -105,13 +105,16 @@ winget install --id "9NKSQGP7F2NH"                                            # 
 winget install --id "XP99J3KP4XZ4VV"                                          # Zoom
 
 # Images
-winget install --id "9N3SQK8PDS8G"                                     # Screen To Gif
-winget install --id "dotPDN.PaintDotNet" --interactive --scope machine # Paint.NET
+winget install --id "dotPDN.PaintDotNet" --interactive --scope machine   # Paint.NET
 
 # Media
 winget install --id "XPDM1ZW6815MQM"                                     # VLC
 winget install --id "plex.plexmediaplayer" --interactive --scope machine # Plex
 winget install --id "XSplit.VCam" --interactive --scope machine          # XSplit VCam
+
+# Screen Recording
+winget install --id "9N3SQK8PDS8G"                                       # Screen To Gif
+winget install --id "Webadderall.Recordly"                               # Recordly
 
 # Linux
 
@@ -134,3 +137,6 @@ winget install --id "Telerik.Fiddler.Everywhere" --interactive           # Fiddl
 winget install --id "CoreyButler.NVMforWindows" --interactive # NVM
 winget install --id "9PNRBTZXMB4Z"                            # Python 3.13
 winget install --id "Microsoft.DotNet.SDK.9" --interactive    # .NET SDK 9
+
+# AI
+winget install --id "cjpais.Handy"                            # Handy
