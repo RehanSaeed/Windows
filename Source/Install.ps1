@@ -140,3 +140,4 @@ winget install --id "Microsoft.DotNet.SDK.9" --interactive    # .NET SDK 9
 
 # AI
 winget install --id "cjpais.Handy"                            # Handy
+winget install --id "GitHub.CopilotApp"                       # GitHub Copilot
