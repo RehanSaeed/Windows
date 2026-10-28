@@ -1,8 +1,22 @@
-$ProfileDirectory = Split-Path $PROFILE;
+$ProfileDirectory = $PSScriptRoot;
 oh-my-posh init pwsh --config "$ProfileDirectory\oh-my-posh.json" | Invoke-Expression;
 
-Import-Module Terminal-Icons
-Import-Module DockerCompletion
+# Load optional enhancements after the first prompt, when PowerShell is idle.
+if (-not (Get-EventSubscriber -SourceIdentifier PowerShell.OnIdle -ErrorAction Ignore |
+        Where-Object { $_.Action.Name -eq 'Windows.Profile.Modules' })) {
+    $ProfileModuleLoader = Register-EngineEvent -SourceIdentifier PowerShell.OnIdle -MaxTriggerCount 1 -Action {
+        foreach ($module in 'Terminal-Icons', 'DockerCompletion') {
+            try {
+                Import-Module $module -Global -ErrorAction Stop
+            }
+            catch {
+                $Host.UI.WriteErrorLine("PowerShell profile could not load ${module}: $_")
+            }
+        }
+    }
+    $ProfileModuleLoader.Name = 'Windows.Profile.Modules'
+}
+
 Set-PSReadLineOption -PredictionViewStyle ListView
 
 # PowerShell parameter completion shim for the dotnet CLI
