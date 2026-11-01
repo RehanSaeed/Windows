@@ -88,6 +88,16 @@ winget install --id "9NJ3KMH29VGJ"                                # Enpass
 winget install --id "WinSCP.WinSCP" --interactive --scope machine # WinSCP
 winget install --id "9WZDNCRFJ3PV"                                # Windows Scan
 
+# Proton
+winget install --id "Proton.ProtonDrive.CLI" --exact     # Proton Drive CLI
+winget install --id "Proton.ProtonPass.CLI" --exact      # Proton Pass CLI
+winget install --id "Proton.ProtonAuthenticator" --exact # Proton Authenticator
+winget install --id "Proton.ProtonDrive" --exact         # Proton Drive
+winget install --id "Proton.ProtonMail" --exact          # Proton Mail
+winget install --id "Proton.ProtonMailBridge" --exact    # Proton Mail Bridge
+winget install --id "Proton.ProtonPass" --exact          # Proton Pass
+winget install --id "Proton.ProtonVPN" --exact           # Proton VPN
+
 # Pheripherals
 winget install --id "Elgato.ControlCenter" --interactive --scope machine # Elgato Control Center
 winget install --id "Elgato.StreamDeck" --interactive --scope machine    # Elagto Stream Deck
